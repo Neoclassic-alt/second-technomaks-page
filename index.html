@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск товаров</title>
+    <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+    <div class="container">
+        <input type="text" class="search-input" placeholder="Введите название товара" autocomplete="off"/>
+        <div class="down-elements">
+            <ul class="categories">
+                <li data-category="notebooks" hidden>
+                    <a href="https://tehnomaks.ru/catalog/section/noutbuki" class="categories__category">Ноутбуки</a>
+                    <span class="categories__count">(0)</span>
+                </li>
+                <li data-category="smartphones" hidden>
+                    <a href="https://tehnomaks.ru/catalog/section/smartfony" class="categories__category">Смартфоны</a>
+                    <span class="categories__count">(0)</span>
+                </li>
+                <li data-category="printers" hidden>
+                    <a href="https://tehnomaks.ru/catalog/section/printery" class="categories__category">Принтеры</a>
+                    <span class="categories__count">(0)</span>
+                </li>
+                <li data-category="teapots" hidden>
+                    <a href="https://tehnomaks.ru/catalog/section/elektrochayniki" class="categories__category">Электрочайники</a>
+                    <span class="categories__count">(0)</span>
+                </li>
+                <li data-category="videorecorders" hidden>
+                    <a href="https://tehnomaks.ru/catalog/section/videoregistratory-xiaomi" class="categories__category">Видеорегистраторы</a>
+                    <span class="categories__count">(0)</span>
+                </li>
+            </ul>
+            <div class="results">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
